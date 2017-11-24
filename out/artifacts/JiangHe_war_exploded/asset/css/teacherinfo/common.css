@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    letter-spacing: 1px;
+    /*color: #666;*/
+}
+img{
+    vertical-align: bottom;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    background: url(../../image/teacherinfo/bg.png) no-repeat center bottom;
+    min-width:1280px ;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+}
+.select{
+    display: none;
+    position: absolute;
+    top:41px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+.select>li{
+    text-align: center;
+    width: 100%;
+}
+
+.select>li a:hover{
+    background:#eee;
+    font-weight: bold;
+}
+
+
+
+
+

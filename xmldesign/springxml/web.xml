@@ -1,0 +1,92 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/websm.xsd">
+
+    <!--============================系统管理============================-->
+
+    <!--*****************************以下内容禁止修改、删除，直到结尾END*****************************START-->
+
+    <!--**************************系统菜单管理**************************-->
+    <!--获取所有的菜单-->
+    <statemachine id="menu">
+        <state name="init" viewname="menu">
+            <ref beanid="jspPageProcessor"/>
+            <sqlquery key="data" datatype="list">
+                <sql>SELECT * FROM sysmenu order by sort</sql>
+            </sqlquery>
+        </state>
+    </statemachine>
+    <!--**************************系统用户管理**************************-->
+    <!--获取所有的用户角色-->
+    <statemachine id="sysusermanage">
+        <state name="init" viewname="sysusermanage">
+            <ref beanid="jspPageProcessor"/>
+            <sqlquery key="data" datatype="list">
+                <sql>SELECT *,getrolename(sysrole_id) as sysrolename FROM sysrole where sysrole_id!='fe785f38-0baf-11e6-883e-0025b6dd0800' order by sysrole_name</sql>
+            </sqlquery>
+            <!--<sqlquery key="collegedata" datatype="list">-->
+                <!--<sql>SELECT *  FROM college where isDelete = '0' order by createDate desc</sql>-->
+            <!--</sqlquery>-->
+        </state>
+    </statemachine>
+
+    <!--*****************************以上内容禁止修改、删除*****************************END-->
+
+
+    <!--============================后台管理============================-->
+
+
+    <!--============================前台管理============================-->
+    <!--index页前5条新闻信息-->
+    <statemachine id="NewsInformation">
+        <state name="init" viewname="NewsInformation">
+            <ref beanid="jspPageProcessor"/>
+            <sqlquery key="news_top5" datatype="list">
+                <sql><![CDATA[
+                    SELECT *,
+                    FROM_UNIXTIME(UNIX_TIMESTAMP(newsDate),'%Y-%m-%d') AS newsDate,
+                    FROM_UNIXTIME(UNIX_TIMESTAMP(updateDate),'%Y-%m-%d') AS updateDate
+                    FROM news where isDelete='是' ORDER BY isTop='是' DESC,newsDate DESC LIMIT 0,5
+                    ]]></sql>
+            </sqlquery>
+            <sqlquery key="announcementnewses" datatype="list">
+                <sql><![CDATA[
+                    SELECT *,
+                    FROM_UNIXTIME(UNIX_TIMESTAMP(newsDate),'%Y-%m-%d') AS newsDate,
+                    FROM_UNIXTIME(UNIX_TIMESTAMP(updateDate),'%Y-%m-%d') AS updateDate
+                    FROM news WHERE isDelete='是'
+                    AND moduleType = 'e3df07f5-c039-11e6-9c1a-00ac7dc2f176'
+                    ORDER BY isTop='是' DESC,newsDate DESC
+                    ]]></sql>
+            </sqlquery>
+            <sqlquery key="collegenewses" datatype="list">
+                <sql><![CDATA[
+                    SELECT *,
+                    FROM_UNIXTIME(UNIX_TIMESTAMP(newsDate),'%Y-%m-%d') AS newsDate,
+                    FROM_UNIXTIME(UNIX_TIMESTAMP(updateDate),'%Y-%m-%d') AS updateDate
+                    FROM news WHERE isDelete='是'
+                    AND moduleType = 'f18f1f50-c039-11e6-9c1a-00ac7dc2f176'
+                    ORDER BY isTop='是' DESC,newsDate DESC
+                    ]]></sql>
+            </sqlquery>
+            <sqlquery key="scienceactivitynewses" datatype="list">
+                <sql><![CDATA[
+                    SELECT *,
+                    FROM_UNIXTIME(UNIX_TIMESTAMP(newsDate),'%Y-%m-%d') AS newsDate,
+                    FROM_UNIXTIME(UNIX_TIMESTAMP(updateDate),'%Y-%m-%d') AS updateDate
+                    FROM news WHERE isDelete='是'
+                    AND moduleType = 'f9f94fe6-c039-11e6-9c1a-00ac7dc2f176'
+                    ORDER BY isTop='是' DESC,newsDate DESC
+                    ]]></sql>
+            </sqlquery>
+            <sqlquery key="talentintroductiones" datatype="list">
+                <sql><![CDATA[
+                    SELECT *,
+                    FROM_UNIXTIME(UNIX_TIMESTAMP(newsDate),'%Y-%m-%d') AS newsDate,
+                    FROM_UNIXTIME(UNIX_TIMESTAMP(updateDate),'%Y-%m-%d') AS updateDate
+                    FROM news WHERE isDelete='是'
+                    AND moduleType = '029d3282-c03a-11e6-9c1a-00ac7dc2f176'
+                    ORDER BY isTop='是' DESC,newsDate DESC
+                    ]]></sql>
+            </sqlquery>
+        </state>
+    </statemachine>
+</beans>

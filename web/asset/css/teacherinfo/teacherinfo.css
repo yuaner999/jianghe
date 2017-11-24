@@ -1,0 +1,139 @@
+/*个人情况表格样式设置*/
+.personCondition{
+
+}
+.personCondition td{
+    height: auto;
+    width: 50px;
+    padding: 0;
+}
+/*周大福页面的表格的样式设置*/
+table td{
+    padding: 0;
+    height: auto;
+}
+table th,td{
+    position: relative;
+    text-align: center;
+}
+table input{
+    border: none;
+    outline: none;
+}
+/*对长的input输入框的长度重新定义*/
+.longInput{
+    width: 290px !important;
+}
+/*对最长的input输入框的长度重新定义*/
+.maxInput{
+    width: 900px !important;
+}
+/*教育/培训/实习/在校职务信息的样式设置*/
+.eduit{
+    position: relative;
+}
+.eduit .title{
+    position: absolute;
+    left: -45px;
+    top: -26px;
+    width: 230px;
+    z-index: 1000;
+}
+.eduit .backHidden{
+    position: absolute;
+    left: -60px;
+    top: -26px;
+    height: 33px;
+    width: 285px;
+    background-color: #FFFFFF;
+}
+/*左右空格的重定义*/
+.leftSpace {
+    margin-left: 37px;
+}
+/*语言复选框的样式设置*/
+.language{
+    position: relative;
+}
+.language input{
+    position: absolute;
+    top: -5px;
+    cursor: pointer;
+}
+.language span{
+    margin-left: 20px;
+}
+/*当前页面的表格的样式设置*/
+table{
+    width: 1100px;
+}
+table,td{
+    border: none;
+}
+td{
+    height: 45px !important;
+}
+table input{
+    border: 1px solid #929292;
+    padding-left: 10px;
+    width: 171px;
+}
+.table3 thead td{
+    height: 60px !important;
+    width: 160px;
+}
+.table2 tbody td{
+    text-align: left;
+}
+.table2 tbody input{
+    width: 262px;
+}
+/*input输入框的样式重定义*/
+input{
+    padding-left: 10px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*输入框的样式设置*/
+.longInput{
+    width: 264px !important;
+}
+.name_space{
+    letter-spacing: 16px;
+}
+.normalInput{
+    width: 180px;
+}
+.maxInput{
+    width: 955px !important;
+}
+.longInput2{
+    width: 447px;
+}
+.longInput3{
+    width: 720px;
+}
+/*身份地址的样式设置*/
+.idAdress{
+    width: 980px;
+}
+/*兴趣的样式设置*/
+.interest{
+    margin-right: 14px;
+}
+.ck_language{
+    width: 16px;
+    margin-top: 5px;
+}
+.table1{
+    margin-left: -18px;
+}
+.textarea{
+    padding:5px 5px;
+    width:1090px;
+    height: 132px;
+    margin:52px 0 0 40px;
+    resize: none;
+}

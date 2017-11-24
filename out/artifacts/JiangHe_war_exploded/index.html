@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        var url=location.href.split('#')[0];
+        var index=url.indexOf("/views");
+        var domainName=url.substring(0,index);
+        window.onload=function(){
+            window.location=domainName+"/views/font/login.form";
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

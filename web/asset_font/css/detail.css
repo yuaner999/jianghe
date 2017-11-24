@@ -1,0 +1,114 @@
+.section{
+	padding:38px 0;
+	width:80%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.section>div{
+	float: left;
+}
+.section>.left{
+	position: absolute;
+	width: 20%;
+	top: 38px;
+	left: 0;
+}
+.section>.left ul{
+	border-top: 2px solid #4d4c4c;
+	font-family: arial;
+}
+.section>.left li{
+	height: 47px;
+	line-height: 47px;
+	border-bottom: 1px dashed #000;
+	overflow: hidden;
+} 
+.section>.left li.first div{
+	font-weight: bold;
+}
+.section>.left li div{
+	float: right;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	color: #060001;
+}
+.section>.left li div a{
+	color: inherit;
+	display: block;
+	line-height: 45px;
+	height: 45px;
+	font-weight:normal;
+}
+
+.home_items{
+	margin-top: 5px;
+}
+.section>.left li.sele div a{
+	background: #af3b3b;
+	color:#fff ;
+}
+.section>.left li.last{
+	border: none;
+}
+.section>.right{
+	width: 100%;
+	padding-left: 27%;
+	min-height: 340px;
+}
+.topNav{
+	height: 37px;
+	line-height: 37px;
+	padding-top: 10px;
+	font-size: 18px;
+	color: #830202;
+}
+.topNav ul{
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+	font-size: inherit;
+}
+.topNav>span{
+	vertical-align: middle;
+}
+.topNav li{
+	float: left;
+	font-size: inherit;
+}
+.topNav li a{
+	color: #830202;
+	font-size: 14px;
+}
+.topNav li a:hover{
+	text-decoration: underline;
+}
+.topNav ul span{
+	float: left;
+}
+.contTxt{
+	padding-bottom: 130px;
+}
+.contTxt img{
+	max-width: 100%;
+}
+.contTxt>p{
+	padding: 30px;
+	font-size: 24px;
+	color: #000;
+	text-align: center;
+}
+.writer{
+	text-align: right;
+	font-size: 18px;
+	color: #000;
+	margin-bottom: 30px;
+}
+.muchTxt{
+	font-size: 20px;
+	color: #363636;
+}
+.muchTxt p{
+	/*margin-bottom: 35px;*/
+}

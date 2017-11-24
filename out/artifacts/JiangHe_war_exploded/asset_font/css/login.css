@@ -1,0 +1,78 @@
+/*最外层div的样式设置*/
+html,body{
+	min-width: 1140px;
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+}
+/*背景图的样式设置*/
+.content{
+	position: relative;
+	height: 100%;
+	margin: 0 90px;
+	min-width: 960px;
+	text-align: center;
+	vertical-align: middle;
+}
+.content>div{
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 85%;
+	background-image: url("../img/login_bgLine.png");
+	background-repeat: repeat;
+}
+/*中间部分的样式设置*/
+.banner{
+	position: absolute;
+	top: 32%;
+	background-color: #FFFFFF;
+	text-align: right;
+	width: 100%;
+}
+/*背景图片的样式设置*/
+.banner .bg{
+	position: relative;
+	display: inline-block;
+	width: 62.2%;
+	max-height: 446px;
+}
+.banner .bg>img{
+	width: 100%;
+	margin-top: -15%;
+}
+/*logo区域的样式设置*/
+.banner .logo{
+	position: absolute;
+	top: 30%;
+	left: 15%;
+	width: 33.63%;
+}
+.banner .logo img{
+	width: 100%;
+}
+.banner .logo>p{
+	margin-top: 55px;
+	text-align: center;
+}
+.logo>p>span{
+	padding: 0 6px;
+	font-size: 16px;
+	font-weight: bolder;
+	margin-right: 30px;
+	cursor: pointer;
+}
+.logo>p>span:hover{
+	background-color: #a03237;
+	color: #FFFFFF;
+}
+/*最底部文字的样式设置*/
+.content .bottom_title{
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	font-size: 14px;
+	font-family: "宋体";
+	padding-right: 45px;
+	text-transform: uppercase;
+}

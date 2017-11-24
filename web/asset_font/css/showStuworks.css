@@ -1,0 +1,287 @@
+.workSubject{
+	padding: 0 20px;
+	margin-bottom: 50px;
+}
+.workSubject>p{
+	text-align: center;
+	font-size: 16px;
+	color: #952222;
+	margin-top: 50px;
+}
+.workMsg{
+	margin-top: 30px;
+	text-align: center;
+}
+.workMsg>div{
+	display: inline-block;
+	text-align: center;
+	width: 700px;
+	height: 145px;
+	background: url(../../asset_font/img/stuworks_logo.png) no-repeat;
+	background-position: -110px -200px;
+}
+.workMsg>div>ul{
+	margin-top: 30px;
+}
+.workMsg>div>ul>li{
+	display: block;
+	font-size: 14px;
+	line-height: 25px;
+}
+.workMsg>div>ul>li>span{
+	width: 40%;
+	margin-right: 5%;
+	word-break: keep-all;
+	white-space: nowrap;
+	text-align: right;
+}
+.workMsg .engish{
+	margin-left: 5%;
+	margin-right: 0;
+	text-align: left;
+	color: #6d6d6d;
+}
+.workSubject .banners{
+	margin-top: 40px;
+	background-color: #FFFFFF;
+	padding: 0.8%;
+}
+.workSubject .banners>img{
+	min-width: 1140px;
+	width: 100%;
+	display: block;
+}
+/*图片区域的样式设置*/
+.pictures{
+	position: relative;
+	margin-top: 5px;
+	min-width: 1140px;
+	overflow: hidden;
+}
+/*图片区域向左向右翻页的两个图片的样式设置*/
+.pictures .direction{
+	position: absolute;
+	z-index: 9999;
+	top: 50%;
+	width: 71px;
+	height: 71px;
+	background-color: #8c8c8c;
+	cursor: pointer;
+	display: none;
+}
+.pictures .direction>img{
+	float: left;
+}
+.pictures .turn_left{
+	left:11px;
+	background-image: url("../img/left.png");
+	background-repeat: no-repeat;
+}
+.pictures .turn_right{
+	right:11px;
+	background-image: url("../img/right.png");
+	background-repeat: no-repeat;
+}
+.pictures div,.pictures span{
+	position: relative;
+}
+.pictures div>img{
+	width: 100%;
+}
+.pictures span>img{
+	width: 100%;
+}
+.pictures span{
+
+}
+.pictures .pictures_left{
+	width: 40%;
+	float: left;
+}
+.pictures .pictures_right{
+	width: 40%;
+	text-align: right;
+	float: left;
+}
+.pictures_right .top{
+	width:100% !important;
+}
+.pictures .top{
+	width: 96%;
+}
+.pictures .bottom{
+	width: 100%;
+}
+.pictures_left .top{
+	margin:2%;
+	overflow: hidden;
+}
+.pictures_left .bottom{
+	overflow: hidden;
+}
+.pictures_left .bottom>span{
+	width: 46%;
+	float: left;
+	margin: 2%;
+	overflow: hidden;
+}
+.pictures_right .top{
+	overflow: hidden;
+}
+.pictures_right .top>span{
+	width: 46%;
+	float: left;
+	margin: 2%;
+	overflow: hidden;
+}
+.pictures .img_small{
+	width: 46% !important;
+}
+.pictures_right .bottom .img_big{
+	width: 96%;
+	margin: 2%;
+	overflow: hidden;
+}
+.pictures_right .bottom .img_long{
+	width: 32.3%;
+	text-align: right;
+}
+.pictures .imgText{
+	width: 84%;
+	line-height: 20px;
+	text-align: left;
+	padding: 5px 15px;
+	vertical-align: middle;
+	font-size: 14px;
+	background-color: #000000;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	color: #FFFFFF;
+	position: relative;
+	cursor: pointer;
+	z-index: 100;
+	max-height: 100px;
+	overflow: hidden;
+/*	display: none;*/
+
+}
+.pictures .imgText_left{
+	position: absolute;
+	bottom: 40px;
+	left: 2%;
+}
+.pictures  .bottom .imgText_left{
+	left: 4%;
+}
+.pictures .imgText_right{
+	position: absolute;
+	bottom: 40px;
+	right: 4%;
+}
+.pictures .imgText_big{
+	width: 80%;
+	line-height: 30px;
+	right: 2%;
+}
+.lastrect .imgText_big{
+	right: 4%;
+}
+.pictures img{
+	display: block;
+}
+.lastrect{
+	float: left;
+	width: 20%;
+}
+.lastrect .top>span{
+	display: block;
+	margin: 4%;
+	overflow: hidden;
+	width:96%;
+}
+#heightImg{
+	display: block;
+	margin: 8% 2%;
+}
+.img_big,.img_small{
+	cursor: pointer;
+}
+.black{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 10000;
+	opacity: 0.5;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	display: none;
+}
+.window{
+	display: none;
+	position: fixed;
+	left: 10%;
+	height: 90%;
+	width: 80%;
+	top: 5%;
+	z-index: 10001;
+	padding: 20px;
+	text-align: center;
+}
+.window div{
+	margin:0  auto;
+	display: inline-block;
+	padding: 20px;
+	background: #000;
+	position: relative;
+}
+.window div b{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: #000;
+	color: #fff;
+	font-weight:bold;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	right: -15px;
+	top: -15px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	cursor: pointer;
+}
+.window img{
+	margin: 0 auto;
+	display: block;
+}
+.workMsg div{
+	position: relative;
+}
+.workMsg div>b{
+	position: absolute;
+	width:119px;
+	height: 100px;
+	cursor: pointer;
+	top:16px;
+	left: 0;
+}
+.workMsg div>a{
+	position: absolute;
+	width:153px;
+	height: 140px;
+	cursor: pointer;
+	top:0;
+	right: 0;
+}
+.pictures>ol>li{
+	display: block;
+}
+#heightImg{
+	width:96%;
+	height: 96%;
+	overflow: hidden;
+}

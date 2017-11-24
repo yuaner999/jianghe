@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="supermvc" class="com.supermvc.urlmatchers.StatemachineUrlMatcher">
+        <property name="urlStatemachineMap">
+            <map>
+
+                <!--[region adminpages start]-->
+<entry key="/views/admin/AboutUs.form" value="jspstatemachine"/>
+<entry key="/views/admin/AcademicActivitiesManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/ActivityAnnouncedManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/alumnusExchangeManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/backgroundimagemanager.form" value="jspstatemachine"/>
+<entry key="/views/admin/blogroll.form" value="jspstatemachine"/>
+<entry key="/views/admin/chronicleOfEventsManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/collegeIntoevolution.form" value="jspstatemachine"/>
+<entry key="/views/admin/collegeLeadManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/CollegeManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/CollegeNewsManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/degreecommitteeManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/graduateAchManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/graduateActManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/graduateComManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/graduateEduManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/graduateOpeManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/historyEvolutionManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/inlandExchangeManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/internationalExchangeManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/login.form" value="jspstatemachine"/>
+<entry key="/views/admin/majorsurveyManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/ManagementDownload.form" value="jspstatemachine"/>
+<entry key="/views/admin/menu.form" value="jspstatemachine"/>
+<entry key="/views/admin/ModeTypeManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/NotificationManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/organizationManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/partycommitteeJobManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/researchCenterManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/scienceCommitteeManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/ScienceDownload.form" value="jspstatemachine"/>
+<entry key="/views/admin/studentManager.form" value="jspstatemachine"/>
+<entry key="/views/admin/studyAchievementManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/studyLabManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/studyProjectManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/stueducationManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/stuinformsystemManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/stuqualityManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/stuserveManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/SubjectConstructionManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/sysaboutnavy.form" value="jspstatemachine"/>
+<entry key="/views/admin/sysmenumanage.form" value="jspstatemachine"/>
+<entry key="/views/admin/sysroleauthoritymanage.form" value="jspstatemachine"/>
+<entry key="/views/admin/sysrolemanage.form" value="jspstatemachine"/>
+<entry key="/views/admin/sysusermanage.form" value="jspstatemachine"/>
+<entry key="/views/admin/TalentIntroductionManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/TeachingDownload.form" value="jspstatemachine"/>
+<entry key="/views/admin/TranscriptManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/undergraduateAchManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/undergraduateActManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/undergraduateComManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/undergraduateEduManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/undergraduateOpeManage.form" value="jspstatemachine"/>
+<entry key="/views/admin/unionJobManage.form" value="jspstatemachine"/>
+
+                <!--[region adminpages end]-->
+                <!--系统功能-->
+                <entry key="/views/admin/login.form" value="jspstatemachine"/>
+                <entry key="/views/admin/menu.form" value="menu"/>
+                <entry key="/views/admin/sysaboutnavy.form" value="jspstatemachine"/>
+                <entry key="/views/admin/sysmenumanage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/sysroleauthoritymanage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/sysrolemanage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/sysusermanage.form" value="sysusermanage"/>
+                <entry key="/views/admin/AboutUs.form" value="jspstatemachine"/>
+                <entry key="/views/admin/backgroundimagemanager.form" value="jspstatemachine"/>
+                <entry key="/views/admin/blogroll.form" value="jspstatemachine"/>
+                <entry key="/views/admin/ModeTypeManage.form" value="jspstatemachine"/>
+                <!--后台管理-->
+                <!--专栏管理-->
+                <entry key="/views/admin/NotificationManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/CollegeNewsManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/AcademicActivitiesManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/TalentIntroductionManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/SubjectConstructionManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/ActivityAnnouncedManage.form" value="jspstatemachine"/>
+                <!--党群工作-->
+                <entry key="/views/admin/partycommitteeJobManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/unionJobManage.form" value="jspstatemachine"/>
+                <!--学院概况管理-->
+                <entry key="/views/admin/chronicleOfEventsManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/collegeIntoevolution.form" value="jspstatemachine"/>
+                <entry key="/views/admin/collegeLeadManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/historyEvolutionManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/organizationManage.form" value="jspstatemachine"/>
+                    <!--学术研究管理-->
+                <entry key="/views/admin/scienceCommitteeManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/researchCenterManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/studyLabManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/studyProjectManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/studyAchievementManage.form" value="jspstatemachine"/>
+                    <!--交流合作-->
+                <entry key="/views/admin/internationalExchangeManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/inlandExchangeManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/alumnusExchangeManage.form" value="jspstatemachine"/>
+                <!--教育教学管理-->
+                <entry key="/views/admin/majorsurveyManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/TranscriptManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/degreecommitteeManage.form" value="jspstatemachine"/>
+                   <!--本科生教学-->
+                <entry key="/views/admin/undergraduateComManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/undergraduateEduManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/undergraduateActManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/undergraduateAchManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/undergraduateOpeManage.form" value="jspstatemachine"/>
+                   <!--研究生教学-->
+                <entry key="/views/admin/ManagementDownload.form" value="jspstatemachine"/>
+                <entry key="/views/admin/ScienceDownload.form" value="jspstatemachine"/>
+                <entry key="/views/admin/TeachingDownload.form" value="jspstatemachine"/>
+                <!--后台管理-->
+                <entry key="/views/admin/ModeTypeManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/graduateAchManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/graduateActManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/graduateComManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/graduateEduManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/graduateOpeManage.form" value="jspstatemachine"/>
+                <!--学生工作-->
+                <entry key="/views/admin/stueducationManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/stuinformsystemManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/stuqualityManage.form" value="jspstatemachine"/>
+                <entry key="/views/admin/stuserveManage.form" value="jspstatemachine"/>
+                <!--新闻图片修改-->
+                <entry key="/views/admin/newsimagemanage.form" value="jspstatemachine"/>
+                <!--图片轮播修改-->
+                <entry key="/views/admin/wheelimgmanage.form" value="jspstatemachine"/>
+                <!--教工申请-->
+                <entry key="/views/admin/teacherinfoApply.form" value="jspstatemachine"/>
+                <!--教工管理-->
+                <entry key="/views/admin/teacherinfoManage_1.form" value="jspstatemachine"/>
+                <entry key="/views/admin/teacherinfoManage_2.form" value="jspstatemachine"/>
+                <!--教工信息审核-->
+                <entry key="/views/admin/teacherinfoRevi.form" value="jspstatemachine"/>
+
+                <entry key="/views/admin/showstatistics.form" value="jspstatemachine"/>
+
+              <!-- 用户页面-->
+                <entry key="/views/font/writeteacherinfo.form" value="jspstatemachine"/>
+                <entry key="/views/font/categoryNewsList.form" value="jspstatemachine"/>
+                <entry key="/views/font/detail.form" value="jspstatemachine"/>
+                <entry key="/views/font/login.form" value="jspstatemachine"/>
+                <entry key="/views/font/index.form" value="NewsInformation"/>
+                <entry key="/views/font/newsList.form" value="jspstatemachine"/>
+                <entry key="/views/font/organization.form" value="jspstatemachine"/>
+                <entry key="/views/font/schoolLeader.form" value="jspstatemachine"/>
+                <entry key="/views/font/showStuworks.form" value="jspstatemachine"/>
+                <entry key="/views/font/testTree.form" value="jspstatemachine"/>
+                <!--[region statemachine start]-->
+<entry key="/views/menu.form" value="menu"/>
+<entry key="/views/sysusermanage.form" value="sysusermanage"/>
+<entry key="/views/NewsInformation.form" value="NewsInformation"/>
+
+                <!--[region statemachine end]-->
+
+            </map>
+        </property>
+    </bean>
+
+
+</beans>

@@ -1,0 +1,30 @@
+.newsList ul li{
+	line-height: 36px;
+	height: 36px;
+	padding: 0 135px;
+}
+.newsList {
+	border: none;
+}
+.newsList ul{
+	position: relative;
+	border-top: 1px dashed #868686;
+}
+.newsList ul>span{
+	position: absolute;
+	top: 6px;
+	left: 0;
+	color: #9e0303;
+	font-size: 18px;
+}
+.newsList ul li div{
+	margin-top: 14px;
+}
+.newsList ul>div{
+	text-align: center;
+	margin: 10px 0;
+}
+.newsList ul>div a{
+	font-size: 18px;
+	color: #9E0303;
+}

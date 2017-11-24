@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="superjson" class="com.supermvc.urlmatchers.JsonStatemachineUrlMatcher">
+        <property name="urlStatemachineMap">
+            <map>
+
+                <entry key="/jsons/test.form" value="test"/>
+                <entry key="/jsons/checkcode.form" value="checkcode"/>
+                <!--[region jsonxml start]-->
+<entry key="/jsons/loadSysUser.form" value="loadSysUser"/>
+<entry key="/jsons/editSysUser.form" value="editSysUser"/>
+<entry key="/jsons/deleteSysUser.form" value="deleteSysUser"/>
+<entry key="/jsons/addMenu.form" value="addMenu"/>
+<entry key="/jsons/editMenu.form" value="editMenu"/>
+<entry key="/jsons/deleteMenu.form" value="deleteMenu"/>
+<entry key="/jsons/addOrganization.form" value="addOrganization"/>
+<entry key="/jsons/editOrganization.form" value="editOrganization"/>
+<entry key="/jsons/deleteOrganization.form" value="deleteOrganization"/>
+<entry key="/jsons/loadSysRole.form" value="loadSysRole"/>
+<entry key="/jsons/addRole.form" value="addRole"/>
+<entry key="/jsons/editRole.form" value="editRole"/>
+<entry key="/jsons/deleteRole.form" value="deleteRole"/>
+<entry key="/jsons/getRoleName.form" value="getRoleName"/>
+<entry key="/jsons/getRoleMenu.form" value="getRoleMenu"/>
+<entry key="/jsons/loadStatistics.form" value="loadStatistics"/>
+<entry key="/jsons/loadbgimg.form" value="loadbgimg"/>
+<entry key="/jsons/updatebgimg.form" value="updatebgimg"/>
+<entry key="/jsons/loadAboutUs.form" value="loadAboutUs"/>
+<entry key="/jsons/editAboutUs.form" value="editAboutUs"/>
+<entry key="/jsons/loadblogrollInfo.form" value="loadblogrollInfo"/>
+<entry key="/jsons/addblogrollInfo.form" value="addblogrollInfo"/>
+<entry key="/jsons/delblogrollInfo.form" value="delblogrollInfo"/>
+<entry key="/jsons/updateblogrollInfo.form" value="updateblogrollInfo"/>
+<entry key="/jsons/loadFindPwdCode.form" value="loadFindPwdCode"/>
+<entry key="/jsons/update_findPwd_Reset.form" value="update_findPwd_Reset"/>
+<entry key="/jsons/edit_findpwdcodestatus.form" value="edit_findpwdcodestatus"/>
+<entry key="/jsons/loadModeType.form" value="loadModeType"/>
+<entry key="/jsons/addModeType.form" value="addModeType"/>
+<entry key="/jsons/editModeType.form" value="editModeType"/>
+<entry key="/jsons/deleteModeType.form" value="deleteModeType"/>
+<entry key="/jsons/addNews.form" value="addNews"/>
+<entry key="/jsons/commendNews.form" value="commendNews"/>
+<entry key="/jsons/editNews.form" value="editNews"/>
+<entry key="/jsons/editsingleNews.form" value="editsingleNews"/>
+<entry key="/jsons/deleteNews.form" value="deleteNews"/>
+<entry key="/jsons/loadNews.form" value="loadNews"/>
+<entry key="/jsons/loadarcprofession.form" value="loadarcprofession"/>
+<entry key="/jsons/loadadarcprofession.form" value="loadadarcprofession"/>
+<entry key="/jsons/loadarclecture.form" value="loadarclecture"/>
+<entry key="/jsons/loadlayprofession.form" value="loadlayprofession"/>
+<entry key="/jsons/loadlayadprofession.form" value="loadlayadprofession"/>
+<entry key="/jsons/loadlaylecture.form" value="loadlaylecture"/>
+<entry key="/jsons/loadexppeople.form" value="loadexppeople"/>
+<entry key="/jsons/loadIntroduce.form" value="loadIntroduce"/>
+<entry key="/jsons/loadCollegeLeader.form" value="loadCollegeLeader"/>
+<entry key="/jsons/loadLink.form" value="loadLink"/>
+<entry key="/jsons/deleteLink.form" value="deleteLink"/>
+<entry key="/jsons/updateLink.form" value="updateLink"/>
+<entry key="/jsons/addLink.form" value="addLink"/>
+<entry key="/jsons/addProduction.form" value="addProduction"/>
+<entry key="/jsons/editProduction.form" value="editProduction"/>
+<entry key="/jsons/deleteProduction.form" value="deleteProduction"/>
+<entry key="/jsons/loadProduction.form" value="loadProduction"/>
+<entry key="/jsons/loadNewsimg.form" value="loadNewsimg"/>
+<entry key="/jsons/updateNewsimg.form" value="updateNewsimg"/>
+<entry key="/jsons/loadWheelimg.form" value="loadWheelimg"/>
+<entry key="/jsons/updateWheelimg.form" value="updateWheelimg"/>
+<entry key="/jsons/loadTeacher.form" value="loadTeacher"/>
+<entry key="/jsons/loadModel.form" value="loadModel"/>
+<entry key="/jsons/loadStutsTeacher.form" value="loadStutsTeacher"/>
+<entry key="/jsons/loadbackgroud.form" value="loadbackgroud"/>
+<entry key="/jsons/loadMenuByParent.form" value="loadMenuByParent"/>
+<entry key="/jsons/statistics.form" value="statistics"/>
+<entry key="/jsons/fontloadidorganization.form" value="fontloadidorganization"/>
+<entry key="/jsons/loadMenu.form" value="loadMenu"/>
+<entry key="/jsons/loadRole.form" value="loadRole"/>
+
+                <!--[region jsonxml end]-->
+
+            </map>
+        </property>
+    </bean>
+
+
+</beans>

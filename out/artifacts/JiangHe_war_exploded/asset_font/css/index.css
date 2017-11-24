@@ -1,0 +1,42 @@
+
+.banner{
+	position: absolute !important;
+}
+.home_items li div{
+	width: 100%;
+	height: 300px;
+}
+.home_items li ul{
+	background: #ccc;
+	position: relative;
+}
+.home_items{
+	height: auto !important;
+}
+.home_items>li{
+	background: transparent!important;
+}
+.home_items li{
+	height: auto !important;
+}
+.home_items li.firstli a{
+	background: #c36464 !important; 
+}
+.home_items li a{
+    display: block;
+    height: 25px !important;
+    z-index: 100;
+    border-left: 1px solid #fff;
+    position: relative !important;
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	line-height: 25px;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	font-family: 宋体;
+	font-size: 14px;
+	font-weight: bolder;
+	z-index: 9999;
+}

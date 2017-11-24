@@ -1,0 +1,60 @@
+.leaderPhoto>p{
+    padding: 30px;
+    font-size: 27px;
+    color: #000;
+    text-align: center;
+}
+.home_items{
+	margin-top: 5px;
+}
+.sectionBox{
+	background: url(../images/bg_02.png) no-repeat  center bottom;
+}
+  .leaderPhoto .first{
+  	overflow: hidden;
+  }
+.leaderPhoto ul{
+	margin: 90px 0;
+}
+.leaderPhoto li{
+	float: left;
+	position: relative;
+}
+.leaderPhoto li p{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: url(../images/bgleftnav_29.png);
+	font-size: 18px;
+	color: #000;
+	text-align: right;
+	line-height: 37px;
+	height: 37px;
+	padding-right: 10px;
+	display: none;
+}
+.leaderPhoto .first li{
+	width: 40%;
+	margin: 0 5%;
+}
+.leaderPhoto li div img{
+	width: 100%;
+	display: block;
+}
+.leaderPhoto .secound{
+	overflow: hidden;
+	width: 133%;
+	position: relative;
+	left: -16%;
+}
+.leaderPhoto .secound li{
+	width: 30%;
+	margin: 0 1.5%;
+}
+.section{
+	overflow: inherit;
+}
+.section>.right{
+	float: none;
+}

@@ -1,0 +1,171 @@
+.home_items{
+	margin-top: 5px;
+}
+.section{
+	margin-top: 45px;
+	padding: 0 1%;
+	overflow: hidden;
+}
+.imgBox{
+	overflow: hidden;
+	width: 103%;
+}
+.imgBox li{
+	float: left;
+	width: 31%;
+	margin-right: 2%;
+	overflow: hidden;
+}
+.imgBox li img {
+	height:100%;
+	width: 100%;
+}
+
+.news{
+	padding-top: 100px;
+	width: 63%;
+	margin: 0 auto;
+	position: relative;
+	left: 3%;
+}
+.news>p{
+	text-align: center;
+	font-size: 23px;
+	color: #9e0303;
+}
+.news>p span{
+	font-size: 16px;
+	margin: 0 5px;
+}
+.news>p img{
+	height: 24px;
+}
+.newsList{
+	border-top: 1px dashed #868686;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+.newsList ul li{
+	line-height: 70px;
+	height: 70px;
+	border-bottom: 1px dashed #868686;
+	padding: 0 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.newsList ul li:hover{
+	color: #3e4a61;
+}
+.newsList ul li a{
+	color: inherit;
+}
+.newsList ul li div{
+	float: left;
+	background: #9e0303;
+	height: 8px;
+	width: 8px;
+	margin-top: 30px;
+	margin-right: 20px;
+	font-size: 16px;
+	color: #060001;
+}
+.newsList ul li  b{
+	font-size: 18px;
+}
+.newsList>ol{
+	text-align: center;
+} 
+.newsList ol ol{
+	overflow: hidden;
+	margin-top: 35px;
+	font-size: 14px;
+	color: #060001;
+	display: inline-block;
+}
+.newsList ol li{
+	float: left;
+	text-align: center;
+	width: 25px;
+	cursor: pointer;
+}
+.newsList ol b{
+	display: inline-block;
+	width: 8px;
+	border: 8px solid transparent;
+	float: left;
+	position: relative;
+	top:2px;
+	cursor: pointer;
+	margin: 0 3px;
+}
+.newsList b.first{
+	border-right-color: #b84646;
+}
+.newsList b.last{
+	border-left-color: #b84646;
+}
+.news_box{
+	position: relative;
+}
+.leftNav{
+	position: absolute;
+	left: 0;
+	top: -120px;
+}
+.leftNav ul{
+	position: relative;
+	z-index: 1;
+}
+.leftNav li{
+	background: url(../images/bgleftnav_29.png);
+	width: 200px;
+	height: 68px;
+	line-height: 68px;
+	margin-bottom: 2px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #000;
+}
+.leftNav li a{
+	color: inherit;
+	display: block;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	padding-right: 67px;
+}
+.leftNav li b{
+	width: 23px;
+	height: 33px;
+	background: url(../images/graylibg_18.png);
+	float: right;
+	position: absolute;
+	right: 20px;
+	top: 17.5px;
+}
+.leftNav li.last{
+	margin-bottom: 0;
+}
+.leftNav>b{
+	position: absolute;
+	top: 0;
+	right: 62px;
+	width: 5px;
+	height: 100%;
+	background: #6b6e70;
+}
+.imgBox{
+	position: relative;
+}
+.imgBox>a{
+	position: absolute;
+	right: 4%;
+	top: 42%;
+	width: 6%;
+	text-align: center;
+	font-size: 24px;
+	color: #3a3a3a;
+	line-height: inherit;
+	background: url(../images/wwwwwwwww_17.png);
+}

@@ -1,0 +1,54 @@
+html{
+	font-size: 12px;
+}
+body,p,span,div,h1,h2,h3,h4,h5,h6,ul,li,a,i,select{
+	padding:0;
+	margin:0;
+	border: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	font-family: "微软雅黑";
+}
+body{
+	max-width: 1754px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px 1px #535353;
+}
+ul,li,span,a,img,i{
+	display: inline-block;
+}
+img{
+	font-size: 0;
+	border: none;
+}
+img.load{
+	background: url(../../asset_font/img/loading-1.gif) no-repeat center;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	cursor: pointer;
+}
+ul,li{
+	list-style: none;
+}
+button,a,select{
+	cursor: pointer;
+}
+select{
+	outline: none;
+}
+.clearfix{
+	zoom: 1;
+}
+.clearfix:after{
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}

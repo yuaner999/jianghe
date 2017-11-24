@@ -1,0 +1,68 @@
+/***公共样式****/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+	box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	-o-box-sizing: border-box !important;
+	-ms-box-sizing: border-box !important;
+}
+img{
+	border: 0px;
+	border-style: none;
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+html{
+	background: #eee;
+}
+body{
+	box-shadow: 0 0 10px 1px #535353;
+	letter-spacing: 1px;
+	color: #666;;
+	background: #fff;
+	margin: 0 auto;
+	max-width: 1600px !important;
+	margin: 0 auto;
+	min-width: 1140px;
+}
+img.load{
+	background: url(/asset_font/img/loading-1.gif) no-repeat center;
+	cursor: pointer;
+}
+button,a,select{
+	cursor: pointer;
+}
+select{
+	outline: none;
+}
+.clearfix{
+	zoom: 1;
+}
+.clearfix:after{
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+input,button{
+	outline: none;
+	border: none;
+}
+@media screen and (max-width: 1600px){
+	body{
+		width:1200px !important;
+	}
+	.banner img{
+		position: relative;
+		display: block;
+		width:1200px !important;
+		height: 175px !important;
+	}
+}

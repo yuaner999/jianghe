@@ -1,0 +1,113 @@
+.organization>p{
+	padding: 30px;
+	font-size: 27px;
+	color: #000;
+	text-align: center;
+}
+.section{
+	padding-bottom: 140px !important;
+}
+.section_box{
+	background: url(../images/bg_02.png) no-repeat center bottom;
+}
+.a p{
+	font-size: 22px;
+	color: #fff;
+	background: #848383;
+	border: 1px solid #000;
+	width: 45px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+.a>p{
+	margin: 0 auto;
+	width: 235px;
+	height: 60px;
+	font-size: 26px;
+	line-height: 60px;
+	text-align: center;
+	margin: 60px auto;
+	position: relative;
+}
+.a>p>b{
+	position: absolute;
+	width: 1px;
+	background: #000;
+	height: 61px;
+	bottom: -62px;
+	left: 117.5px;
+}
+.b{
+	float: left;
+	overflow: hidden;
+	position: relative;
+	left: 3px;
+}
+.b ul{
+	overflow: hidden;
+	position: relative;
+	left: 3px;
+}
+.b li{
+	float: left;
+	overflow: hidden;
+}
+.b p{
+	margin: 60px auto;
+	position: relative;
+}
+.b p b{
+	position: absolute;
+	width: 1px;
+	background: #000;
+	height: 61px;
+	top: -60px;
+	left: 22.5px;
+}
+.b>p b:last-of-type{
+	position: absolute;
+	width: 1px;
+	background: #000;
+	height: 61px;
+	bottom: -63px;
+	left: 22.5px;
+	top: auto;
+}
+.b p>a:first-of-type{
+	position: absolute;
+	top: -60px;
+	height: 1px;
+	background: #000;
+	width: 1000px;
+	left: 22.5px;
+}
+.b p>a:last-of-type{
+	position: absolute;
+	top: -60px;
+	height: 1px;
+	background: #000;
+	width: 1000px;
+	right: 19px;
+}
+.a>.b:first-of-type>p a:last-of-type{
+	display: none;
+}
+.a>.b:last-of-type>p a:first-of-type{
+	display: none;
+}
+.b li:first-of-type p a:last-of-type{
+	display: none;
+}
+.b li:last-of-type p a:first-of-type{
+	display: none;
+}
+.b>p{
+	height: 260px;
+	line-height: 260px;
+}
+.b>p span{
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 26px;
+}

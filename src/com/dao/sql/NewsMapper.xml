@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.dao.interfaces.NewsDao">
+    <!--活动标题-->
+    <select id="getNum" resultType="int" parameterType="String">
+        SELECT COUNT(*) FROM news WHERE newsFile=#{name} AND isDelete='是'
+    </select>
+    <!--活动标题-->
+    <select id="loadAllNews" resultType="com.model.News" parameterType="map">
+        SELECT *,FROM_UNIXTIME(UNIX_TIMESTAMP(createDate),'%Y-%m-%d') AS createDates
+         FROM gq_news_typename WHERE isDelete='是'
+        <if test="moduleType != null and moduleType !=''">
+            AND  moduleType=#{moduleType}
+        </if>
+        <if test="newsClass != null and newsClass !=''">
+            AND  newsClass=#{newsClass}
+        </if>
+        <if test="sqlStr != null and sqlStr !=''">
+            AND  newsTitle like concat('%',#{sqlStr},'%')
+        </if>
+        <if test="newsDescribe != null and newsDescribe !=''">
+            AND  newsDescribe=#{newsDescribe}
+        </if>
+         ORDER BY isTop='是' DESC,newsDate DESC
+    </select>
+    <!--活动标题-->
+    <select id="checkThirdList" resultType="map" parameterType="map">
+        SELECT parent_menuid,sysmenu_name FROM sysmenu WHERE sysmenu_id=#{moduleType} and parent_menuid != '5db0147a-0a0e-11e6-8cac-0025b6dd0800'
+          and parent_menuid!='2c659331-0d1a-11e6-b867-0025b6dd0800'
+    </select>
+    <!--加载一级菜单名字-->
+    <select id="loadFirstFloorMenu" resultType="map" parameterType="map">
+       SELECT sysmenu_name FROM sysmenu WHERE sysmenu_id=#{grandPaId}
+    </select>
+    <!--加载二级菜单名字-->
+    <select id="loadSecondFloorMenu" resultType="map" parameterType="map">
+       SELECT * FROM sysmenu WHERE parent_menuid=#{grandPaId} GROUP BY sysmenu_name
+    </select>
+    <!--加载导航-->
+    <select id="loadNavigation" resultType="map" parameterType="map">
+        SELECT sysmenu_name,sysmenu_id FROM sysmenu WHERE parent_menuid IN (SELECT parentId FROM gq_news_parent WHERE newsId =#{newsId} and isDelete='是') group by sysmenu_name order by create_date
+    </select>
+    <!--加载新闻详情-->
+    <select id="loadNewsByNewsID" resultType="map" parameterType="map">
+        SELECT * ,FROM_UNIXTIME(UNIX_TIMESTAMP(newsDate),'%Y-%m-%d') AS newsDates FROM gq_news_parent WHERE newsId =#{newsId}
+    </select>
+    <select id="statistics"  parameterType="string">
+          UPDATE statistics
+          SET COUNT = COUNT +1
+          WHERE statisticsId = #{statisticsId}
+    </select>
+</mapper>

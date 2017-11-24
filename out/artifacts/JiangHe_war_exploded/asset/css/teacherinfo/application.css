@@ -1,0 +1,239 @@
+/*公共样式*/
+body, div, ul, li, h1, h2, h3, h4, h5, h6, span, a, p{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+span{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    /*display: block;*/
+}
+a:hover{
+    cursor: pointer;
+}
+ul,li{
+    list-style-type: none;
+}
+
+img{
+    display: inline-block;
+    border: none;
+}
+
+p{
+    display: inline-block;
+}
+
+.clearfix{
+    zoom: 1;
+}
+
+.clearfix:after{
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.body{
+    width: 1180px;
+    margin: 50px auto;
+    padding: 30px 50px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+    behavior: url(/asset/js/PIE.htc);
+}
+div{
+    vertical-align: middle;
+}
+/*头部标题区域的样式设置*/
+.head{
+    position: relative;
+    margin-bottom: 40px;
+}
+.head>span:first-child{
+    position: absolute;
+    top: 10px;
+    left: -24px;
+    width: 16px;
+    height: 16px;
+    background-image: url(/asset/image/blockage.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.head .iconBlock{
+    position: absolute;
+    top: 0;
+    left: -16px;
+    width: 18px;
+    height: 18px;
+    background-image: url(/asset/image/blockage2.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.head h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+/*内容的每个模块的标题区域的样式设置*/
+.content_head{
+    position: relative;
+}
+.content_head>span{
+    position: relative;
+    width: 167px;
+    text-align: center;
+}
+.content_head .title{
+    border: 2px solid #197ffe;
+    padding: 3px 15px;
+    border-radius: 15px;
+    position: relative;
+    behavior: url(/asset/js/PIE.htc);
+}
+.content_head>img{
+    display: inline-block;
+    margin-bottom: 6px;
+}
+/*内容的每个模块的主体区域的样式设置*/
+.content_subject{
+    position: relative;
+    padding: 40px;
+}
+/*第一个模块的样式设置*/
+.bottomBlock{
+    position: relative;
+    margin-bottom: 20px;
+}
+/*给两个字的名字加空隙*/
+.name_space{
+    letter-spacing: 16px;
+}
+/*设置页面中的input的样式*/
+input{
+    border: 1px solid #929292;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 25px;
+    outline: none;
+    font-size: 16px;
+}
+.minInput{
+    width: 52px;
+}
+.shortInput{
+    width: 72px;
+}
+.normalInput{
+    width: 118px;
+}
+.longInput{
+    width: 198px;
+}
+.maxInput{
+    width: 606px;
+}
+/*图片的样式设置*/
+.picture{
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    border: 1px solid #197FFE;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+/*验证输入的小图标的样式设置*/
+.controlTable{
+    position: relative;
+    margin-top: 20px;
+    height: 25px;
+}
+.iconRight{
+    position: absolute;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background-image: url(/asset/image/icon_right.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.iconError{
+    position: absolute;
+    top: 4px;
+    left: 50px;
+    width: 20px;
+    height: 20px;
+    background-image: url(/asset/image/icon_error.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+/*某些标签左边的空格样式设置*/
+.leftSpace{
+    margin-left: 35px;
+}
+/*某些标签右边的空格样式设置*/
+.rightSpace{
+    margin-right: 15px;
+}
+/*设置表格及表格中的input的样式*/
+.content_table{
+    padding: 30px 40px;
+}
+.form_table{
+    width: 99%;
+}
+.form_table th,td{
+    text-align: center;
+    padding: 0 10px 0 0;
+    height: 45px;
+}
+.form_table tr:last-child{
+    margin-bottom: 0;
+}
+.form_table input{
+    width: 100%;
+    outline: none;
+}
+/*填写申请理由的样式设置*/
+.writeReason{
+    border: 1px solid #929292;
+    padding: 10px;
+    height: 112px;
+    width: 100%;
+    overflow: hidden;
+}
+/*按钮的样式设置*/
+.foot{
+    text-align: center;
+}
+.buttons>span{
+    color: #4373e7;
+    padding: 5px 15px;
+    background-color: #fafafa;
+    border: 1px solid #3364be;
+    border-radius: 16px;
+    box-shadow: 0 5px 5px #d4d7df;
+    width: 75px;
+    position: relative;
+    behavior: url(/asset/js/PIE.htc);
+}
+.buttons>span:hover{
+    color: #ffffff;
+    background-color: #4373e7;
+    cursor: pointer;
+}
+html{
+    background: url(../../image/teacherinfo/bg.png) no-repeat center bottom;
+    min-width:1280px ;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+}

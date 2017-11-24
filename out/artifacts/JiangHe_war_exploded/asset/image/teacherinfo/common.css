@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    letter-spacing: 1px;
+    /*color: #666;*/
+}
+img{
+    vertical-align: bottom;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    background: url(../../image/font_1/bg.png) no-repeat center bottom;
+    min-width:1280px ;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+}
+#header,#section,#footer{
+    width: 1280px;
+    margin: 0 auto;
+}
+#header{
+    height: 128px;
+}
+.logo{
+    padding-top: 30px;
+    float: left;
+}
+.nav{
+    float: right;
+    width: 794px;
+    padding-top: 46px;
+    position: relative;
+}
+.login,.success{
+    position: absolute;
+    top: 46px;
+    right: 0;
+}
+
+.login{
+    color:#197ffe;
+    font-size: 14px;
+    top: 40px;;
+}
+.login>a{
+    color:#197ffe;
+    font-size: 14px;
+}
+.login>input{
+    outline:none;
+    font-size: 14px;
+    color:#197ffe ;
+    margin: 0 3px;
+    border:1px solid #197ffe;
+    border-radius: 8px;
+    behavior: url(../../js/font_1/PIE.htc);
+    line-height: 22px;
+    padding: 0 2px;
+}
+.login>input.nth-child3{
+    width:45px;
+    background: #eee;
+    font-weight: bold;
+    cursor: pointer;
+}
+.success{
+    display: none;
+    color:#197ffe ;
+    font-size: 14px;
+    font-weight: bold;
+}
+.success>i{
+    float: left;
+    width: 31px;
+    height: 31px;
+    background: url(../../image/font_1/user_06.png) no-repeat;
+    margin-top: -6px;
+    margin-right: 6px;
+}
+.success>input{
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 6px;
+    color:#197ffe ;
+    margin: 0 3px;
+    border:1px solid #197ffe;
+    border-radius: 8px;
+    behavior: url(../../js/font_1/PIE.htc);
+    width:45px;
+    background: #eee;
+    font-weight: bold;
+}
+.success>input:hover{
+    cursor: pointer;
+}
+.nav>ul{
+    height: 41px;
+    background: url(../../image/font_1/nav_bg_10.png) no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    margin-top: 31px;
+    padding-top: 10px;
+    padding-left: 52px;
+    position: relative;
+}
+.nav>ul b{
+    display: inline-block;
+    width:37px;
+    height: 29px;
+    background: url(../../image/font_1/home_10.png) no-repeat;
+    cursor:pointer;
+    position: absolute;
+    top:13px;
+    left: 12px;
+}
+.nav>ul>li{
+    display: inline-block;
+    height: 41px;
+    position: relative;
+}
+.nav>ul>li:hover{
+    background: url(../../image/font_1/select_nav_13.png);
+    -webkit-background-size: 138px 41px;
+    behavior: url(../../js/font_1/PIE.htc);
+}
+.nav>ul>li>a{
+    padding: 10px 35px;
+    line-height: 36px;
+    color: #fff;
+    text-shadow: 2px 2px #0768f4;
+    font-size: 16px;
+    /*line-height: 20px;*/
+    display: inline;
+}
+.select{
+    display: none;
+    position: absolute;
+    top:41px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+.select>li{
+    text-align: center;
+    width: 100%;
+}
+.select>li a{
+    display: inline-block;
+    width: 136px;
+    padding:  8px 0;
+    font-size: 14px;
+    color: #197FFE;
+    text-shadow: none;
+    background: url(../../image/font_1/shadow_27.png)no-repeat;
+    -webkit-background-size: 100% auto;
+    border: 1px solid #0098FF;
+}
+.select>li a:hover{
+    background:#eee;
+    font-weight: bold;
+}
+#footer{
+    width: 100%;
+    min-width: 1280px;
+    height: 110px;
+    padding-top: 50px;
+    background: url(../../image/font_1/foot_bg_18.png);
+    -webkit-background-size: 100% ;
+}
+.footer{
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer>p{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.footer ul{
+    overflow: hidden;
+    display: inline-block;
+}
+.footer li{
+    float: left;
+}
+.footer li a{
+    color: #FFFFFF;
+    margin: 0 9px;
+    font-size: 14px;
+}
+.footer span{
+    float: left;
+    color: #FFFFFF;
+}
+/*给登录成功后设定样式*/
+#exit{
+    text-align: right;
+    position: absolute;
+    top: 46px;
+    right: 0;
+    color: #0768f4;
+}
+#change_pwd{
+    color: #0768f4;
+}
+#exit a,span{
+    /*color:#0768f4;*/
+}
+
+#exit_btn{
+    font-size: 16px;
+    line-height: 36px;
+    width: 34px;
+    overflow:visible;
+
+}
+
+
+
+
